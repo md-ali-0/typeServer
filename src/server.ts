@@ -5,9 +5,9 @@ import config from './app/config';
 
 let server: Server;
 
+
 async function main() {
     const port = config.port || 8080;
-
     try {
         await mongoose.connect(config.database_uri as string, {
             dbName: config.database_name,
